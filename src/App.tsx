@@ -1,25 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 import './tailwind.generated.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './pages/home';
+import Header from './components/header';
 
 function App(): JSX.Element {
   return (
-    <div className='text-center'>
-      <header className='bg-purple-darker m-6 p-6 rounded shadow-lg'>
-        <img src={logo} className='App-logo text-center' alt='logo' />
-        <p className='text-base'>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className='App-link'
-          href='https://reactjs.org'
-          target='_blank'
-          rel='noopener noreferrer'>
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Header />
+        <Switch>
+          <Route path='/about'>
+            <Home />
+          </Route>
+          <Route path='/users'>
+            <Home />
+          </Route>
+          <Route path='/'>
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

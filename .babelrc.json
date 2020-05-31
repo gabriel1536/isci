@@ -1,0 +1,15 @@
+{
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["."],
+        "extensions": [".ts", ".tsx", ".jsx", ".js", ".json"],
+        "alias": {
+          "@pages/*": "./src/pages/*",
+          "@tailwindcss": "./src/tailwind.generated.css"
+        }
+      }
+    ]
+  ]
+}
