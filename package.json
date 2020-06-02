@@ -22,9 +22,9 @@
     "typescript": "~3.7.2"
   },
   "scripts": {
-    "build:tailwind": "tailwindcss build src/tailwind.css -o src/tailwind.generated.css",
-    "prestart": "npm run build:tailwind",
-    "prebuild": "npm run build:tailwind",
+    "build:css": "postcss src/styles/tailwind.scss -o src/styles/index.scss",
+    "prestart": "npm run build:css",
+    "prebuild": "npm run build:css",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -54,6 +54,7 @@
     "@types/react-router-dom": "^5.1.5",
     "@typescript-eslint/eslint-plugin": "^3.0.2",
     "@typescript-eslint/parser": "^3.0.2",
+    "autoprefixer": "^9.8.0",
     "babel-plugin-module-resolver": "^4.0.0",
     "eslint": "^7.1.0",
     "eslint-config-prettier": "^6.11.0",
@@ -61,7 +62,9 @@
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.20.0",
-    "lint-staged": "^10.2.6"
+    "lint-staged": "^10.2.6",
+    "node-sass": "^4.14.1",
+    "postcss-cli": "^7.1.1"
   },
   "husky": {
     "hooks": {

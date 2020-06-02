@@ -1,0 +1,24 @@
+$branding_white: #F4F2F7;
+$branding_violet: #4B3B67;
+$branding_red: #4C051D;
+$branding_pink: #DA7D9D;
+
+.font-color-branding-white {
+  --text-opacity: 1;
+  color: $branding_white;
+}
+
+.font-color-branding-pink {
+  --text-opacity: 1;
+  color: $branding_pink;
+}
+
+.font-color-branding-violet {
+  --text-opacity: 1;
+  color: $branding_violet;
+}
+
+.font-color-branding-red {
+  --text-opacity: 1;
+  color: $branding_red;
+}

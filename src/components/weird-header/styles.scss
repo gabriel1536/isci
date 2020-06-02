@@ -1,0 +1,25 @@
+@import '../../styles/colors.scss';
+
+@mixin responsive-bg-image($image-width, $image-height, $percentage) {
+  background-size: $percentage;
+  height: 0;
+  padding-bottom: percentage($image-height / $image-width);
+  display: block;
+}
+
+.weird-header {
+  background: url('../../assets/background.png') no-repeat;
+
+  // substitute for your image dimensions
+  @include responsive-bg-image(200, 80, 100%);
+}
+
+.responsive-imgs {
+  height: auto;
+  &.isologo {
+    max-width: 46%;
+  }
+  &.play-video {
+    max-width: 15%;
+  }
+}

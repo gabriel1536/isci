@@ -1,0 +1,10 @@
+@tailwind base;
+@import './colors.scss';
+@import './fonts.scss';
+
+body {
+  background-color: $branding_white;
+}
+
+@tailwind components;
+@tailwind utilities;

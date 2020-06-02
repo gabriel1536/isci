@@ -1,7 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import '../App.css';
 import logo from '../logo.svg';
-import '../tailwind.generated.css';
 
 const Home = (): JSX.Element => {
   return (
