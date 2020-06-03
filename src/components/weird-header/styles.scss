@@ -3,7 +3,7 @@
 @mixin responsive-bg-image($image-width, $image-height, $percentage) {
   background-size: $percentage;
   height: 0;
-  padding-bottom: percentage($image-height / $image-width);
+  padding-bottom: percentage(0.31);
   display: block;
 }
 

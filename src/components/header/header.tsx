@@ -5,12 +5,12 @@ import './styles.scss';
 const Header = (): JSX.Element => {
   return (
     <nav className='flex items-center justify-between flex-wrap main-header p-6'>
-      <div className='flex items-center flex-shrink-0 text-white mr-6'>
-        <div className='inline-block text-2xl font-bold px-4 py-2 leading-none border rounded text-white border-white'>
+      <div className='flex items-center flex-shrink-0 font-color-branding-white mr-6'>
+        <div className='inline-block text-2xl font-bold px-4 py-2 leading-none border rounded font-color-branding-white border-white'>
           ISCI
         </div>
       </div>
-      <div className='block lg:hidden'>
+      <div className='block md:hidden'>
         <button className='flex items-center px-3 py-2 border rounded font-color-branding-white focus:outline-none'>
           <svg
             className='fill-current h-3 w-3'
@@ -21,27 +21,27 @@ const Header = (): JSX.Element => {
           </svg>
         </button>
       </div>
-      <div className='w-full block flex-grow lg:flex lg:items-center lg:w-auto lg:w-auto hidden'>
-        <div className='text-sm lg:flex-grow'>
+      <div className='w-full block flex-grow md:flex md:items-center md:w-auto md:w-auto hidden'>
+        <div className='text-sm md:flex-grow'>
           <NavLink
             exact
             activeClassName='font-color-branding-pink'
             to='/'
-            className='block mt-4 lg:inline-block lg:mt-0 text-teal-200 ml-4 mr-6 text-lg font-semibold font-color-branding-white'>
+            className='block mt-4 md:inline-block md:mt-0 text-teal-200 ml-4 mr-6 text-lg font-semibold font-color-branding-white'>
             {' '}
             INICIO
           </NavLink>
           <NavLink
             activeClassName='font-color-branding-pink'
             to='/curses'
-            className='block mt-4 lg:inline-block lg:mt-0 ml-4 mr-6 text-lg font-semibold font-color-branding-white'>
+            className='block mt-4 md:inline-block md:mt-0 ml-4 mr-6 text-lg font-semibold font-color-branding-white'>
             {' '}
             CURSOS
           </NavLink>
           <NavLink
             activeClassName='font-color-branding-pink'
             to='/level'
-            className='block mt-4 lg:inline-block lg:mt-0 ml-4 text-lg font-semibold font-color-branding-white'>
+            className='block mt-4 md:inline-block md:mt-0 ml-4 text-lg font-semibold font-color-branding-white'>
             {' '}
             TEST DE NIVEL
           </NavLink>
