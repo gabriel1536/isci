@@ -12,11 +12,6 @@ const WeirdHeader = (): JSX.Element => {
           className='flex-shrink-0 ml-auto mr-8 mt-8 responsive-imgs isologo'
           alt='isologo'></img>
       </div>
-      <div className='flex items-center'>
-        <button className='flex-shrink-0 ml-auto mr-8 mt-6 max-w-full h-auto responsive-imgs play-video'>
-          <img src={playvideo} alt='isologo'></img>
-        </button>
-      </div>
     </div>
   );
 };

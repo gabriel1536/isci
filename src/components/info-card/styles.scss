@@ -4,22 +4,31 @@
   background-color: $branding-white;
   margin-left: 1.5vw;
   margin-right: 1.5vw;
-  max-width: 14rem;
+  max-width: 14vw;
+  max-height: 32vw;
 }
 
 .info-card-mobile {
   background-color: $branding-white;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2vw;
-  margin-bottom: 2vw;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+  max-width: 24vw;
+  max-height: 32vw;
 }
 
 .info-img {
   height: auto;
-  width: 8vw;
+  width: 6vw;
 }
 
 .info-button {
   background-color: $branding-red;
+}
+
+.text-1vw {
+  font-size: 1vw;
+}
+
+.text-2vw {
+  font-size: 2vw;
 }
