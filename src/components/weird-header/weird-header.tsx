@@ -9,7 +9,7 @@ const WeirdHeader = (): JSX.Element => {
       <div className='flex items-center'>
         <img
           src={isci}
-          className='flex-shrink-0 ml-auto mr-8 mt-8 responsive-imgs isologo'
+          className='flex-shrink-0 ml-auto responsive-imgs isologo'
           alt='isologo'></img>
       </div>
     </div>

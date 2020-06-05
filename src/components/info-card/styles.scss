@@ -2,23 +2,23 @@
 
 .info-card {
   background-color: $branding-white;
-  margin-left: 1.5vw;
-  margin-right: 1.5vw;
-  max-width: 14vw;
-  max-height: 32vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  max-width: 20vw;
+  max-height: 38vw;
 }
 
 .info-card-mobile {
   background-color: $branding-white;
   margin-left: 1.5vw;
   margin-right: 1.5vw;
-  max-width: 24vw;
-  max-height: 32vw;
+  max-width: 28vw;
+  max-height: 36vw;
 }
 
 .info-img {
   height: auto;
-  width: 6vw;
+  width: 3.5vw;
 }
 
 .info-button {
@@ -31,4 +31,17 @@
 
 .text-2vw {
   font-size: 2vw;
+}
+
+.text-1-5vw {
+  font-size: 1.5vw;
+}
+
+.text-2-5vw {
+  font-size: 2.5vw;
+}
+
+.info-img-5 {
+  height: auto;
+  width: 4vw;
 }
